@@ -1,0 +1,35 @@
+.cvSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cvWrap {
+  padding-top: 2rem;
+  padding-left: 5rem;
+  background-color: $black;
+  color: $white;
+  width: 55%;
+  div {
+    margin-bottom: 3rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding: 0.5rem;
+  }
+  .headerBox {
+    margin-top: 1.5rem;
+    display: flex;
+    div {
+      margin-left: 3rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
