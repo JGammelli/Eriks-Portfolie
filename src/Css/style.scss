@@ -4,12 +4,13 @@
 @import "contact";
 @import "gameBox";
 @import "colorVariable";
-@import "projectPage";
 @import "cv";
 
 * {
   margin: 0;
   padding: 0;
+  // border-style: solid;
+  // border-color: red;
 }
 
 #root {
@@ -22,7 +23,7 @@ body {
   color: rgb(8, 8, 8);
   letter-spacing: 0.2em;
   line-height: 2.5em;
-  background-color: black;
+  background-color: white;
   color: $white;
 }
 

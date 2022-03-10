@@ -7,20 +7,23 @@
 }
 
 .cvWrap {
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 1px 40px 5px;
   padding-top: 2rem;
   padding-left: 5rem;
-  background-color: $black;
-  color: $white;
+  padding-right: 5rem;
+  background-color: $white;
+  color: black;
   width: 55%;
+  display: flex;
+  flex-direction: column;
+
   div {
     margin-bottom: 3rem;
   }
   ul {
     list-style-type: none;
   }
-  li {
-    padding: 0.5rem;
-  }
+
   .headerBox {
     margin-top: 1.5rem;
     display: flex;
@@ -32,4 +35,38 @@
       font-size: 2rem;
     }
   }
+}
+
+.cvLeft {
+  width: 60%;
+}
+.cvRight {
+  width: 25%;
+  h2 {
+    font-size: 1rem;
+  }
+  p,
+  li {
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.25rem;
+    margin-bottom: -0.5rem;
+  }
+  p {
+    margin-top: 1rem;
+    color: gray;
+    font-size: 0.9;
+    font-weight: 900;
+  }
+  ul {
+    svg {
+      margin: 0;
+    }
+  }
+}
+.cvContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

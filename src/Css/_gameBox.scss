@@ -1,54 +1,31 @@
 .gameContainer {
-  display: grid;
-  grid-template-columns: 10em 40em auto;
-  grid-template-rows: 5em auto;
   padding: 5em;
+  width: 75%;
+  margin: auto;
   margin-bottom: 10em;
+  margin-top: 10em;
+  text-align: center;
   h2 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
     padding-bottom: 1em;
-    align-self: end;
     font-size: 2em;
   }
   img {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 600px;
-    max-height: 400px;
-    background: $movie;
-    align-self: center;
+    height: 200px;
   }
   p {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
+    width: 85%;
+    margin: auto;
     font-size: 1.2em;
     font-weight: 900;
+    margin-bottom: 3rem;
   }
-  background-color: $black;
-  color: $white;
-  box-shadow: rgba(0, 0, 0, 0.219) 0px 50px 50px 7px;
-
+  color: $black;
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 1px 40px 5px;
+  background-color: $white;
   video {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
     width: 600px;
     max-height: 400px;
     background: $movie;
-    align-self: center;
-  }
-  iframe {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 600px;
-    height: 400px;
-    background: $movie;
-    align-self: center;
   }
 }
 .mobileImg {
@@ -61,34 +38,39 @@
 .gameLink:hover {
   color: $hover;
 }
+.fileContainer {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  iframe {
+    height: 400px;
+    width: 600px;
+    background: $movie;
+  }
+}
+.imgSlider {
+  width: 44rem;
+  img {
+    height: 400px;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  color: $black;
+}
 
 @media screen and (max-width: 1024px) {
   .gameContainer {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 5em 20em 5em 5em auto;
     text-align: center;
     h2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 4;
-      align-self: end;
-      font-size: 1.4em;
-    }
-    img {
-      grid-column-start: 2;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      width: 600px;
-      max-height: 400px;
-      align-self: center;
-      justify-self: center;
+      font-size: 2em;
     }
     p {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      font-size: 0.7em;
+      font-size: 1.4rem;
     }
+  }
+  .fileContainer {
+    display: flex;
+    flex-direction: column;
   }
 }

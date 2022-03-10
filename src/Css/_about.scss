@@ -1,26 +1,26 @@
 @import "colorVariable";
 .aboutProfile {
-  background: black;
-  width: 100vw;
-  height: 150vh;
-  display: flex;
+  background: white;
   flex-flow: column;
+  color: black;
+  padding-top: 5rem;
+  height: 90vh;
+  display: grid;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
-  color: $white;
 }
 
 .aboutName {
-  align-self: center;
-  text-align: center;
-
+  padding-bottom: 5rem;
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 0.5em;
+    font-weight: 200;
   }
   h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
+    font-weight: 200;
   }
   p {
     font-size: 1.8em;
@@ -28,27 +28,37 @@
 }
 
 .aboutBread {
-  padding: 5rem;
-  align-self: center;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
   p {
-    font-size: 1em;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    font-size: 1rem;
   }
+  img {
+    border-radius: 50%;
+  }
+}
+.breadContainer {
+  width: 40%;
+}
+
+.breadImg {
+  align-self: center;
 }
 
 //for smaller devices
-
 @media screen and (max-width: 1024px) {
   .aboutBread {
-    padding: 5rem;
-    align-self: center;
-    text-align: center;
+    flex-direction: column;
     p {
       font-size: 1.5em;
-      margin-left: 5rem;
-      margin-right: 5rem;
     }
+  }
+  .breadContainer {
+    width: 80%;
+  }
+  .breadImg {
+    margin-top: 4rem;
   }
 }

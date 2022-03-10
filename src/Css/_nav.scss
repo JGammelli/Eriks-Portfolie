@@ -1,11 +1,10 @@
 @import "colorVariable";
 #nav {
   z-index: 10;
-  order: 1;
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: black;
+  background-color: white;
 
   ul {
     padding: 1em;
@@ -17,12 +16,11 @@
   li {
     padding-left: 5rem;
   }
-
   a {
     text-decoration: none;
     color: $white;
     font-size: 1rem;
-    color: white;
+    color: $black;
   }
   a:hover {
     color: $hover;

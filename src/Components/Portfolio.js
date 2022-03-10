@@ -4,18 +4,16 @@ import ProjectInfo from "./ProjectInfo";
 class Portfolio extends React.Component {
   render() {
     return (
-      <>
-        <section id="profileSection">
-          <div className="portfolieName">
-            <h1>Portfolio</h1>
-            <p>Game Designer</p>
-            <p>Erik Löfving</p>
-          </div>
-        </section>
-        <section id="portfolieSection">
+      <section id="profileSection">
+        <div className="portfolieName">
+          <h1>Portfolio</h1>
+          <p>Game Designer</p>
+          <p>Erik Löfving</p>
+        </div>
+        <div id="portfolieSection">
           <ProjectInfo />
-        </section>
-      </>
+        </div>
+      </section>
     );
   }
 }

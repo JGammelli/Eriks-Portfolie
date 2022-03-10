@@ -1,5 +1,5 @@
 #contactSection {
-  background: black;
+  background: white;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -12,8 +12,9 @@
 }
 
 .contactWrap {
-  background-color: $black;
-  color: $white;
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 1px 40px 5px;
+  background-color: $white;
+  color: $black;
   grid-column-start: 3;
   grid-column-end: 9;
   grid-row-start: 3;
@@ -21,15 +22,22 @@
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+  img {
+    grid-column-start: 8;
+    grid-row-start: 5;
+    border-radius: 50%;
+    margin-top: -1rem;
+  }
 }
 
 .contactBox {
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 10;
   grid-row-start: 2;
-  grid-row-end: 3;
   h1 {
-    font-size: 2em;
+    margin-top: 2rem;
+    font-size: 1.8em;
+    font-weight: 200;
   }
 }
 
@@ -43,7 +51,7 @@
   }
   a {
     text-decoration: none;
-    color: $white;
+    color: $black;
   }
 }
 
@@ -57,9 +65,8 @@
 //for smaller devices
 @media screen and (max-width: 1024px) {
   .contactBox {
-    width: 10rem;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     p {
       font-size: 1.2rem;
@@ -68,6 +75,14 @@
   .contactInfo {
     p {
       font-size: 2rem;
+    }
+  }
+  .contactWrap {
+    img {
+      grid-column-start: 7;
+      grid-row-start: 8;
+      margin-top: -4rem;
+      margin-left: -3rem;
     }
   }
 }
